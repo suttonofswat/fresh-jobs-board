@@ -1,0 +1,68 @@
+body {
+  background-image: url("../images/bg.png");
+  margin: 0; }
+
+nav {
+  background: #fff;
+  padding: 2em; }
+  nav .logo {
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    height: 3em;
+    background-size: contain; }
+  nav .brand {
+    position: absolute;
+    left: 21%;
+    bottom: 89%;
+    font-size: 2em;
+    color: #006400;
+    text-shadow: 1px 1px 2px black; }
+  nav .navLinks {
+    display: none; }
+
+.joby {
+  background: #fff;
+  padding: 2em;
+  border: solid 1px #ccc; }
+
+.posty {
+  background: #fff;
+  padding: 2em;
+  border: solid 1px #ccc;
+  box-shadow: 10px 5px 5px #ccc; }
+  .posty .form {
+    margin-top: 1em; }
+  .posty input {
+    width: 100%; }
+  .posty textarea {
+    width: 100%;
+    display: block; }
+  .posty button {
+    float: right;
+    background-color: green;
+    color: white;
+    padding: 1em;
+    border-radius: 1em;
+    margin-top: 1em; }
+
+@media only screen and (min-width: 935px) {
+  .joby {
+    float: right;
+    width: 25%;
+    margin: 1em 2em; }
+  .posty {
+    float: left;
+    margin: 1em 2em;
+    width: 45%; }
+  nav .brand {
+    left: 12%; }
+  nav .Links {
+    position: absolute;
+    top: 8%;
+    left: 30%; }
+  nav .navLinks {
+    display: inline;
+    margin: 0 2em;
+    text-decoration: none;
+    color: black;
+    font-size: 1em; } }
