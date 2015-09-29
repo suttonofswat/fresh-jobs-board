@@ -68,15 +68,18 @@ nav{
 .comInfo{
 	border: solid 1px #ccc;
 	margin: 1em;
+	max-height: 500px;
 		.bgImg{
 			margin: 2em 1em;
-			width: 90%;
+			width: 95%;
 			background-size: cover;
 			height:7em;
 		}
 		.companyLogo{
 			height:5em;
-			margin: 3em 9em;
+			position: relative;
+			left: calc(50% - 33.5px);
+			top: 3em;
 
 		}
 		.companyName{
