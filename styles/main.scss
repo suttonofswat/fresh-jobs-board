@@ -4,7 +4,7 @@ body{
 }
 nav{
 	background: #fff;
-	padding: 2em;
+	padding: 1em;
 		.logo{
 			background-image: url('../images/logo.png');
 			background-repeat:no-repeat;
@@ -59,6 +59,36 @@ nav{
 		}
 
 }
+.jobRow{
+	background: #fff;
+	box-shadow: 10px 5px 5px #ccc;
+	margin: 1em;
+	padding:1em;
+}
+.comInfo{
+	border: solid 1px #ccc;
+	margin: 1em;
+		.bgImg{
+			margin: 2em 1em;
+			width: 90%;
+			background-size: cover;
+			height:7em;
+		}
+		.companyLogo{
+			height:5em;
+			margin: 3em 9em;
+
+		}
+		.companyName{
+			text-align:center;
+		}
+		.companyLocal{
+			text-align:center;
+		}
+
+}
+
+
 
 
 @media only screen and (min-width: 935px){
@@ -89,4 +119,5 @@ nav{
 			font-size:1em;
 		}
 	}
+
 }

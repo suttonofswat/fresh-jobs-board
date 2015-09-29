@@ -4,7 +4,7 @@ body {
 
 nav {
   background: #fff;
-  padding: 2em; }
+  padding: 1em; }
   nav .logo {
     background-image: url("../images/logo.png");
     background-repeat: no-repeat;
@@ -44,6 +44,28 @@ nav {
     padding: 1em;
     border-radius: 1em;
     margin-top: 1em; }
+
+.jobRow {
+  background: #fff;
+  box-shadow: 10px 5px 5px #ccc;
+  margin: 1em;
+  padding: 1em; }
+
+.comInfo {
+  border: solid 1px #ccc;
+  margin: 1em; }
+  .comInfo .bgImg {
+    margin: 2em 1em;
+    width: 90%;
+    background-size: cover;
+    height: 7em; }
+  .comInfo .companyLogo {
+    height: 5em;
+    margin: 3em 9em; }
+  .comInfo .companyName {
+    text-align: center; }
+  .comInfo .companyLocal {
+    text-align: center; }
 
 @media only screen and (min-width: 935px) {
   .joby {
