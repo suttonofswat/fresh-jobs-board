@@ -54,7 +54,8 @@ nav {
 .comInfo {
   border: solid 1px #ccc;
   margin: 1em;
-  max-height: 500px; }
+  max-height: 500px;
+  background: #fff; }
   .comInfo .bgImg {
     margin: 2em 1em;
     width: 95%;
@@ -70,7 +71,7 @@ nav {
   .comInfo .companyLocal {
     text-align: center; }
 
-@media only screen and (min-width: 935px) {
+@media (min-width: 992px) {
   .joby {
     float: right;
     width: 25%;
@@ -90,4 +91,13 @@ nav {
     margin: 0 2em;
     text-decoration: none;
     color: black;
-    font-size: 1em; } }
+    font-size: 1em; }
+  .jobRow {
+    float: left;
+    width: 60%; }
+  .comInfo {
+    float: right;
+    width: 25%; }
+    .comInfo .bgImg {
+      width: 100%;
+      margin: 0; } }

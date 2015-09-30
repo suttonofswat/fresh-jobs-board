@@ -12,7 +12,7 @@ nav{
 			background-size: contain;
 		}
 		.brand{
-			position:absolute;
+			position: absolute;
 			left:21%;
 			bottom: 89%;
 			font-size: 2em;
@@ -69,11 +69,13 @@ nav{
 	border: solid 1px #ccc;
 	margin: 1em;
 	max-height: 500px;
+	background:  #fff;
 		.bgImg{
 			margin: 2em 1em;
 			width: 95%;
 			background-size: cover;
 			height:7em;
+
 		}
 		.companyLogo{
 			height:5em;
@@ -94,7 +96,7 @@ nav{
 
 
 
-@media only screen and (min-width: 935px){
+@media (min-width: 992px) {
 	.joby{
 		float:right;
 		width: 25%;
@@ -121,6 +123,21 @@ nav{
 			color: black;
 			font-size:1em;
 		}
+	}
+
+	.jobRow{
+		float:left;
+		width: 60%;
+	}
+
+	.comInfo{
+		float:right;
+		width: 25%;
+		.bgImg{
+			width:100%;
+			margin: 0;
+		}
+		
 	}
 
 }
