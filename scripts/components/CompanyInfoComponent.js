@@ -8,7 +8,7 @@ module.exports = React.createClass({
             	<div className="bgImg" style={style}>
             		<img className="companyLogo" src={this.props.model.get('company_logo')} />
             	</div>
-            	<h3 className="companyName">{this.props.model.get('company_name')}</h3>
+            	<div className="companyName">{this.props.model.get('company_name')}</div>
             	<div className="companyLocal">{this.props.model.get('company_location')}</div> 
             </div>
         );

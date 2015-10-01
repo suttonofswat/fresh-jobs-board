@@ -18,7 +18,11 @@ nav {
     color: #006400;
     text-shadow: 1px 1px 2px black; }
   nav .navLinks {
-    display: none; }
+    margin: 0 2em;
+    float: right;
+    text-decoration: none;
+    color: black;
+    font-size: 1em; }
 
 .joby {
   background: #fff;
@@ -54,11 +58,8 @@ nav {
 .comInfo {
   border: solid 1px #ccc;
   margin: 1em;
-  max-height: 500px;
   background: #fff; }
   .comInfo .bgImg {
-    margin: 2em 1em;
-    width: 95%;
     background-size: cover;
     height: 7em; }
   .comInfo .companyLogo {
@@ -67,7 +68,8 @@ nav {
     left: calc(50% - 33.5px);
     top: 3em; }
   .comInfo .companyName {
-    text-align: center; }
+    text-align: center;
+    padding: 1em; }
   .comInfo .companyLocal {
     text-align: center; }
 
@@ -92,12 +94,9 @@ nav {
     text-decoration: none;
     color: black;
     font-size: 1em; }
-  .jobRow {
+  .jobbie {
     float: left;
     width: 60%; }
   .comInfo {
     float: right;
-    width: 25%; }
-    .comInfo .bgImg {
-      width: 100%;
-      margin: 0; } }
+    width: 25%; } }
