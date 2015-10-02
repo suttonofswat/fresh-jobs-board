@@ -1,10 +1,13 @@
 body{
 	background-image: url('../images/bg.png');
 	margin:0;
+	font-family: sans-serif;
 }
 nav{
 	background: #fff;
 	padding: 1em;
+	overflow:hidden;
+	border-top: #525252 1em solid;
 		.logo{
 			background-image: url('../images/logo.png');
 			background-repeat:no-repeat;
@@ -19,19 +22,43 @@ nav{
 			color: #006400;
 			text-shadow: 1px 1px 2px black; 
 		}
+		.Links{
+			padding:1em;
+			float: right;
+		}
 		.navLinks{
-			// display:none;
 			margin: 0 2em;
-			float:right;
+			float:left;
 			text-decoration: none;
 			color: black;
 			font-size:1em;
 		}
 }
-.joby{
-	background: #fff;
+
+.fullBody{
+	margin: 0 1em;
+}
+
+.fullLookingJob{
+	background: #F7FEE8;
+	border: 2px solid #E1FAB3;
 	padding: 2em;
-	border: solid 1px #ccc;
+	margin:1em;
+		.lookingTitle{
+			font-size:1.5em;
+		}
+		.lookingCreate{
+			padding-top:1em;
+		}
+		button{
+			width:100%;
+			padding:1em;
+			border-radius:1em;
+			background: #666666;
+			color:#fff;
+			border:none;
+			font-size:1em;
+		}
 }
 
 .posty{
@@ -59,47 +86,81 @@ nav{
 		}
 
 }
-.jobRow{
+.jobbie{
 	background: #fff;
 	box-shadow: 10px 5px 5px #ccc;
-	margin: 1em;
 	padding:1em;
+	box-sizing:border-box;
+	margin-top:1em;
+		.jobRow{
+			padding:1em;
+			
+		}
+		.jobTitle{
+			color: #006325;
+			text-decoration: none;
+			font-size: 1.5em;
+		}
+}
+.para{
+			margin:0;
+			color: #8C8C8C;
+			font-size: .9em;
+}
+.jobDesc{
+	font-size:1.2em;
+	padding-top:1em;
 }
 .comInfo{
-	border: solid 1px #ccc;
+	border: solid 2px rgba(0,0,0,0);
 	margin: 1em;
 	background:  #fff;
+	text-align:center;
 		.bgImg{
 			background-size: cover;
-			height:7em;
 
 		}
 		.companyLogo{
-			height:5em;
 			position: relative;
-			left: calc(50% - 33.5px);
 			top: 3em;
 
 		}
 		.companyName{
-			text-align:center;
-			padding:1em;
+			padding:3em 1em 1em;
 		}
-		.companyLocal{
-			text-align:center;
-		}
+	
 
+}
+.formy{
+	padding: 1em;
+	.filter{
+		width:40%;
+		float:left;
+	}
+	.inputty{
+		width:75%;
+		padding:.5em;
+	}
+	button{
+		padding: .5em 3em;
+		background:#3A9C44;
+		margin-top: .5em;
+		border-radius: .5em;
+		border: none;
+		color:white;
+		font-size:1em;
+	}
 }
 
 
 
-
 @media (min-width: 992px) {
-	.joby{
-		float:right;
-		width: 25%;
-		margin: 1em 2em;
-	}
+	// .joby{
+	// 	float:right;
+	// 	width: 25%;
+	// 	margin: 1em 2em;
+	// }
+
 	.posty{
 		float:left;
 		margin: 1em 2em;
@@ -111,7 +172,7 @@ nav{
 		}
 		.Links{
 			position:absolute;
-			top: 8%;
+			top: 5%;
 			left:30%;
 		}
 		.navLinks{
@@ -125,13 +186,13 @@ nav{
 
 	.jobbie{
 		float:left;
-		width: 60%;
+		width: 70%;
+	}
+	.sideBar{
+		float:right;
+		width: 30%;
 	}
 
-	.comInfo{
-		float:right;
-		width: 25%;
-		
-	}
+	
 
 }

@@ -7,9 +7,10 @@ module.exports = React.createClass({
 		console.log('this.props.model', this.props.model);
 		return (
 				<div className="jobRow">
-					<a href={'#details/'+this.props.model.get('_id')}>{this.props.model.get('job_title')} at {this.props.model.get('employer')}</a>
-					<span>Location: {this.props.model.get('job_location')}</span>
-					<p>Description: {this.props.model.get('job_description')}</p>
+				<hr />
+					<a className="jobTitle" href={'#details/'+this.props.model.get('_id')}>{this.props.model.get('job_title')}</a>
+					<div><strong>{this.props.model.get('employer')}</strong> - {this.props.model.get('job_location')}</div>
+					<div className="para">{this.props.model.get('job_description')}</div>
 					<div>{this.props.model.get('job_tags')}</div>
 
 				</div>

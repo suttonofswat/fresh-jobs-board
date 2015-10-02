@@ -7,10 +7,13 @@ module.exports = React.createClass({
 		console.log(this.props.job);
 		return (
 				<div>
-					<h3>{this.props.job.get('job_title')} at {this.props.job.get('employer')}</h3>
-					<span>Location: {this.props.job.get('job_location')}</span>
-					<p>Description: {this.props.job.get('job_description')}</p>
+					<div className="jobTitle">{this.props.job.get('job_title')}</div>
+					<div className="para">{this.props.job.get('employer')} {this.props.job.get('job_location')}</div>
 					<div>{this.props.job.get('job_tags')}</div>
+					<div className="jobDesc">Job Description</div>
+					<hr />
+					<p>{this.props.job.get('job_description')}</p>
+					
 
 				</div>
 		);

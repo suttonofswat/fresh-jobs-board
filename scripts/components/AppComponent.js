@@ -10,6 +10,8 @@ var CompanyInfoComponent = require('./CompanyInfoComponent.js');
 var JobCollection = require('../collections/JobListingCollection');
 var CompanyCollection = require('../collections/CompanyCollection');
 var JobDetailsPageComponent = require('./JobDetailsPageComponent');
+var InformationBoxComponent = require('./InformationBoxComponent');
+var FilterComponent = require('./FilterComponent')
 
 var jobs = new JobCollection();
 
@@ -82,11 +84,15 @@ module.exports = React.createClass({
 					);
 			});
 			pageComponent = 
-			<div>
+			<div className="fullBody">
 				<div className="jobbie">
+					<FilterComponent />
 					{newJobs}
 				</div>
+				<div className="sideBar">
+					<InformationBoxComponent />
 					<CompanyInfoComponent model={CompanyProfile1} />
+				</div>
 			</div>
 		}
 		else if(this.state.pageName === 'details') {
@@ -97,7 +103,15 @@ module.exports = React.createClass({
 						return job.id === this.state.id;
 					}, this);
 			
-					pageComponent = <JobDetailsPageComponent job={jobModel} />;
+					pageComponent = 
+					<div className="fullBody">
+						<div className="jobbie">
+							<JobDetailsPageComponent job={jobModel} />
+						</div>
+						<div className="sideBar">
+						<CompanyInfoComponent model={CompanyProfile1} />
+						</div>
+					</div>
 				}
 		}
 	
