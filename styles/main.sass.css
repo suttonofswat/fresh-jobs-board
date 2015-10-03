@@ -51,11 +51,17 @@ nav {
     border: none;
     font-size: 1em; }
 
+.tips {
+  background-color: #fff;
+  padding: 2em;
+  margin-top: 1em; }
+
 .posty {
   background: #fff;
-  padding: 2em;
+  padding: 4em 2em;
   border: solid 1px #ccc;
-  box-shadow: 10px 5px 5px #ccc; }
+  box-shadow: 10px 5px 5px #ccc;
+  margin-top: 1em; }
   .posty .form {
     margin-top: 1em; }
   .posty input {
@@ -124,10 +130,15 @@ nav {
     font-size: 1em; }
 
 @media (min-width: 992px) {
+  .tips {
+    float: right;
+    width: 25%;
+    margin: 1em 2em; }
   .posty {
     float: left;
     margin: 1em 2em;
-    width: 45%; }
+    width: 45%;
+    padding: 2em; }
   nav .brand {
     left: 12%; }
   nav .Links {

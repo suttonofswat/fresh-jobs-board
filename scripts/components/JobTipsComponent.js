@@ -3,7 +3,7 @@ var React = require('react');
 module.exports = React.createClass({
 	render: function() {
 		return(
-		<div className="joby">
+		<div className="tips">
 			<h3> Tips for your job posting </h3>
 			<hr/>
 			<p><strong>Add Keywords</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, 

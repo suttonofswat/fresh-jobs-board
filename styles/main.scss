@@ -60,12 +60,17 @@ nav{
 			font-size:1em;
 		}
 }
-
+.tips{
+	background-color: #fff;
+	padding:2em;
+	margin-top:1em;
+}
 .posty{
 	background: #fff;
-	padding: 2em;
+	padding: 4em 2em;
 	border: solid 1px #ccc;
 	box-shadow: 10px 5px 5px #ccc;
+	margin-top:1em;
 		.form{
 			margin-top:1em;
 		}
@@ -155,16 +160,17 @@ nav{
 
 
 @media (min-width: 992px) {
-	// .joby{
-	// 	float:right;
-	// 	width: 25%;
-	// 	margin: 1em 2em;
-	// }
+	.tips{
+		float:right;
+		width: 25%;
+		margin: 1em 2em;
+	}
 
 	.posty{
 		float:left;
 		margin: 1em 2em;
 		width: 45%;
+		padding:2em;
 	}
 	nav{
 		.brand{

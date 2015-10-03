@@ -33004,7 +33004,7 @@ module.exports = React.createClass({
 	render: function render() {
 		return React.createElement(
 			"div",
-			{ className: "joby" },
+			{ className: "tips" },
 			React.createElement(
 				"h3",
 				null,
